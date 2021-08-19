@@ -1,0 +1,7 @@
+File from: [app/img/imageshard/Rectangle68.png]
+
+File to: [app/img/imagesmin/Rectangle68.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Мое\Обучение в SkillBox\gulp test\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/img/imagesmin/Rectangle68.png app/img/imageshard/Rectangle68.png

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/RobotoFonts/Roboto-Regular.woff) format("woff"), url(../fonts/RobotoFonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/RobotoFonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: "normal";
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/RobotoFonts/Roboto-Bold.woff) format("woff"), url(../fonts/RobotoFonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/RobotoFonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: "bold";
+}
+@font-face {
+  font-family: "TTFirsNeue";
+  src: url(../fonts/TT Firs Neue/TTFirsNeue-Regular.woff) format("woff"), url(../fonts/TT Firs Neue/TTFirsNeue-Regular.woff2) format("woff2"), url(../fonts/TT Firs Neue/TTFirsNeue-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: "normal";
+}
+@font-face {
+  font-family: "TTFirsNeue";
+  src: url(../fonts/TT Firs Neue/TTFirsNeue-Bold.woff) format("woff"), url(../fonts/TT Firs Neue/TTFirsNeue-Bold.woff2) format("woff2"), url(../fonts/TT Firs Neue/TTFirsNeue-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: "bold";
+}
+body h1 {
+  color: red;
+  font-family: "TTFirsNeue";
+  font-family: "Roboto";
+}
+body p {
+  color: red;
+  font-family: "TTFirsNeue";
+}
