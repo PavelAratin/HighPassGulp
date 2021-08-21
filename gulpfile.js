@@ -57,6 +57,7 @@ async function images() {
   )
 }
 
+
 function buildcopy() {
   return src([
     'app/css/**/*min.css',
@@ -73,6 +74,7 @@ function startwatch() {
   watch('app/**/*.scss', styles)
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts)
   watch('app/**/*.html').on('change', browserSync.reload)
+  watch('app/img/imageshard/**/*', images);
 
 }
 

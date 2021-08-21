@@ -1,7 +1,0 @@
-File from: [app/img/imageshard/**/*]
-
-File to: [-]
-
-Compression algorithm: [-]
-
-Description:  Directory is empty!: 
