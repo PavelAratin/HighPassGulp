@@ -70,7 +70,7 @@ function buildcopy() {
 
 
 function startwatch() {
-  watch('app/**/*.css', styles)
+  watch('app/**/*.scss', styles)
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts)
   watch('app/**/*.html').on('change', browserSync.reload)
 

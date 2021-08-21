@@ -1,12 +1,188 @@
-@import 'fonts.scss';
+@import "fonts.scss";
+@import "../../node_modules/normalize.css/normalize";
+@import "variable.scss";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  h1 {
-    color: red;
-    font-family: 'Roboto';
+  background-color: $backgroundColorBody;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1289px;
+  margin: 0 auto;
+}
+/*header style start*/
+
+.header__top {
+  background-color: $backgroundColorHeaderTop;
+  padding: 23px 0 22px 0;
+}
+
+.container__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding-right: 50px;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
   }
-  p {
-    color: red;
-    font-family: 'TTFirsNeue';
+  &__item:not(:last-child) {
+    padding-right: 79px;
+  }
+  &__link {
+    font-family: $TTFirsNeue;
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorWhiteText;
   }
 }
+
+.social {
+  display: flex;
+  align-content: center;
+  &__link:not(:last-child) {
+    padding-right: 16px;
+  }
+}
+
+.header__bottom {
+  padding: 13px 0 13px 0;
+  background-color: $backgroundColorHeaderBottom;
+}
+
+.header__tel {
+  font-family: $TTFirsNeue;
+  font-weight: 700;
+  font-size: 16px;
+  color: $colorWhiteText;
+  background-image: url("../img/imageshard/header__tel.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorInput;
+    font-family: $TTFirsNeue;
+    font-weight: 400;
+    font-size: 14px;
+    color: $colorInput;
+  }
+  &__input:focus {
+    outline: none;
+  }
+  &__search {
+    margin-right: 11px;
+  }
+}
+
+/*header style end*/
+
+/*master-class style start*/
+.master-class {
+  padding: 40px 0 40px 0;
+}
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 21px;
+  &__foto--position {
+    position: relative;
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+  &__name {
+    display: block;
+    position: absolute;
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorWhiteText;
+    bottom: 253px;
+    left: 58px;
+  }
+  &__date {
+    position: absolute;
+    font-family: $TTFirsNeue;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 104%;
+    color: $colorWhiteText;
+    max-width: 430px;
+    position: absolute;
+    bottom: 176px;
+    left: 58px;
+  }
+  &__button {
+    position: absolute;
+    display: block;
+    background-color: $ColorButton;
+    border: none;
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: $colorWhiteText;
+    padding: 17px 22px 15px 22px;
+    bottom: 107px;
+    left: 60px;
+  }
+  &__decor {
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    color: $colorWhiteText;
+    background-color: $colorBgDecor;
+    padding: 7px 15px;
+    position: absolute;
+    right: 15px;
+  }
+  &__decor--top {
+    top: 15px;
+  }
+  &__works {
+    font-family: $TTFirsNeue;
+    font-weight: 700;
+    font-size: 24px;
+    color: #202020;
+    grid-column: span 2;
+  }
+}
+
+.fotos__card--md {
+  grid-column: span 2;
+}
+/*master-class style end*/
