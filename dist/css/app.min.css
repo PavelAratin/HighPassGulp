@@ -2,25 +2,25 @@
   font-family: "Roboto";
   src: url(../fonts/RobotoFonts/Roboto-Regular.woff) format("woff"), url(../fonts/RobotoFonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/RobotoFonts/Roboto-Regular.ttf) format("truetype");
   font-weight: 400;
-  font-style: "normal";
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/RobotoFonts/Roboto-Bold.woff) format("woff"), url(../fonts/RobotoFonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/RobotoFonts/Roboto-Bold.ttf) format("truetype");
   font-weight: 700;
-  font-style: "bold";
+  font-display: swap;
 }
 @font-face {
   font-family: "TTFirsNeue";
   src: url(../fonts/TTFirsNeue/TTFirsNeue-Regular.woff) format("woff"), url(../fonts/TTFirsNeue/TTFirsNeue-Regular.woff2) format("woff2"), url(../fonts/TTFirsNeue/TTFirsNeue-Regular.ttf) format("truetype");
   font-weight: 400;
-  font-style: "normal";
+  font-display: swap;
 }
 @font-face {
   font-family: "TTFirsNeue";
   src: url(../fonts/TTFirsNeue/TTFirsNeue-Bold.woff) format("woff"), url(../fonts/TTFirsNeue/TTFirsNeue-Bold.woff2) format("woff2"), url(../fonts/TTFirsNeue/TTFirsNeue-Bold.ttf) format("truetype");
   font-weight: 700;
-  font-style: "bold";
+  font-display: swap;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -423,7 +423,7 @@ a {
   padding: 23px 0 22px 0;
 }
 
-.container__flex {
+.container--flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -734,7 +734,6 @@ a {
 .projects__wrapper {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: 300px 300px;
   grid-template-rows: 300px 300px;
@@ -791,10 +790,10 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
-.project-card--big1 figure, .project-card--big2 figure {
+.project-card--big1 .project-card__figure, .project-card--big2 .project-card__figure {
   height: 100%;
 }
-.project-card--big1 figure img, .project-card--big2 figure img {
+.project-card--big1 .project-card__figure img, .project-card--big2 .project-card__figure img {
   height: 100%;
 }
 .project-card--big2 {
@@ -1071,9 +1070,7 @@ a {
   }
 
   .projects__wrapper {
-    -ms-grid-columns: (1fr)[8];
-    grid-template-columns: repeat(8, 1fr);
-    -ms-grid-rows: (1fr)[3];
+    grid-template-columns: repeat(8, 1fr);  
     grid-template-rows: repeat(3, 1fr);
   }
 
@@ -1179,7 +1176,6 @@ a {
   }
 
   .fotos {
-    -ms-grid-columns: (1fr)[8];
     grid-template-columns: repeat(8, 1fr);
     -ms-grid-rows: 46px 228px 133px;
     grid-template-rows: 46px 228px 133px;
@@ -1246,9 +1242,7 @@ a {
   .projects__wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[6];
     grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (1fr)[4];
     grid-template-rows: repeat(4, 1fr);
   }
 
@@ -1305,7 +1299,6 @@ a {
 }
 @media (max-width: 768px) {
   .fotos {
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 422px 38px 186px 105px;
     grid-template-rows: 422px 38px 186px 105px;
@@ -1389,7 +1382,6 @@ a {
 }
 @media (max-width: 550px) {
   .projects__wrapper {
-    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 1fr 1fr 1fr 422px 0.7fr 0.7fr 422px;
     grid-template-rows: 1fr 1fr 1fr 422px 0.7fr 0.7fr 422px;
