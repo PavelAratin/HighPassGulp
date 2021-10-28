@@ -800,10 +800,10 @@ a {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
-.project-card--big1 figure, .project-card--big2 figure {
+.project-card--big1 .figure, .project-card--big2 .figure {
   height: 100%;
 }
-.project-card--big1 figure img, .project-card--big2 figure img {
+.project-card--big1 .figure img, .project-card--big2 .figure img {
   height: 100%;
 }
 .project-card--big2 {
@@ -863,13 +863,13 @@ a {
 .project-card__date--block {
   display: block;
   position: absolute;
-  top: 22px;
+  bottom: 230px;
   left: 30px;
   color: #FFFFFF;
 }
 .project-card__description {
   position: absolute;
-  top: 49px;
+  bottom: 110px;
   left: 30px;
   max-width: 293px;
 }

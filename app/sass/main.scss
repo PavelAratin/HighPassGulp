@@ -376,12 +376,12 @@ a {
     grid-column: 7/13;
     grid-row: 1/2;
   }
-  &--big1 figure,
-  &--big2 figure {
+  &--big1 .figure,
+  &--big2 .figure {
     height: 100%;
   }
-  &--big1 figure img,
-  &--big2 figure img {
+  &--big1 .figure img,
+  &--big2 .figure img {
     height: 100%;
   }
   &--big2 {
@@ -428,14 +428,14 @@ a {
     &--block {
       display: block;
       position: absolute;
-      top: 22px;
+      bottom: 230px;
       left: 30px;
       color: $colorWhiteText;
     }
   }
   &__description {
     position: absolute;
-    top: 49px;
+    bottom: 110px;
     left: 30px;
     max-width: 293px;
   }
