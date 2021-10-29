@@ -29,7 +29,7 @@ function scripts() {
 function styles() {
   return src('app/sass/main.scss')
     .pipe(sass())
-    .pipe(concat('app.min.css'))
+    .pipe(concat('app.css'))
     .pipe(autoprefixer({ overrideBrowserlist: ['last 10 versions'], grid: true }))
     .pipe(dest('app/css/'))
     .pipe(browserSync.stream())
