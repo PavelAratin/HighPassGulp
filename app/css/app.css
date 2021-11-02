@@ -368,6 +368,7 @@ template {
 
 body {
   background-color: #FFFFFF;
+  min-width: 320px;
 }
 
 ul {
@@ -463,10 +464,6 @@ a {
   -ms-transition: color 0.3s linear;
   -o-transition: color 0.3s linear;
 }
-.nav__link:hover {
-  color: #FF6E30;
-}
-
 .social {
   display: flex;
   align-content: center;
@@ -496,7 +493,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
-  background-image: url("../img/imageshard/header__tel.svg");
+  background-image: url("../img/imagesmin/header__tel.svg");
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 20px;
@@ -858,7 +855,7 @@ a {
   font-size: 12px;
   color: #999999;
   padding-left: 16px;
-  background: url("../img/imageshard/date__pic.svg") no-repeat left;
+  background: url("../img/imagesmin/date__pic.svg") no-repeat left;
 }
 .project-card__date--block {
   display: block;
@@ -946,7 +943,7 @@ a {
   display: block;
   width: 22px;
   height: 22px;
-  background: url("../img/imageshard/button__svg.svg") no-repeat;
+  background: url("../img/imagesmin/button__svg.svg") no-repeat;
   border: none;
   margin-bottom: 135px;
   margin-left: auto;
@@ -972,7 +969,7 @@ a {
   font-size: 16px;
   color: #FFFFFF;
   padding-left: 20px;
-  background: url("../img/imageshard/call__img.svg") no-repeat left;
+  background: url("../img/imagesmin/call__img.svg") no-repeat left;
 }
 
 .contacts-form {
